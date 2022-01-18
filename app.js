@@ -43,8 +43,8 @@ const updateTime = setInterval(updateCountdownTime, 1000);
 function updateNewYears() {
     clearInterval(updateTime);
     hours.innerHTML = ''
-    minutes.innerHTML = ''
-    days.innerHTML = 'Autumn!'
+    minutes.innerHTML = 'Autumn!'
+    days.innerHTML = ''
     seconds.innerHTML = ''
     title.innerHTML = "It's"
 }
@@ -52,4 +52,4 @@ function updateNewYears() {
 var newyearsfire = new Date("March 1 2022 00:00:00").getTime()
 currentTimes = new Date().getTime()
 subtractMilliSecondsValue = newyearsfire - currentTimes;
-setTimeout(updateNewYears, subtractMilliSecondsValue);
+setTimeout(subtractMilliSecondsValue, updateNewYears);
