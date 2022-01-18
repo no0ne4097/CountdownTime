@@ -47,7 +47,6 @@ function updateNewYears() {
     days.innerHTML = 'Gonna'
     seconds.innerHTML = 'Up!'
     title.innerHTML = 'Never'
-    window.location.replace("youtube.com");
 }
 
 var newyearsfire = new Date("March 1 2022 00:00:00").getTime()
